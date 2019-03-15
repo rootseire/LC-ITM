@@ -1,0 +1,48 @@
+{
+"links": [
+{"source":"Wax Cylinder","target":"Single Performer","value":"31"},
+{"source":"Wax Cylinder","target":"Multiple Performers","value":"1"},
+    
+{"source":"78-rpm Disc","target":"Single Performer","value":"61"},
+{"source":"78-rpm Disc","target":"Multiple Performers","value":"11"},
+    
+{"source":"Reel to Reel","target":"Single Performer","value":"93"},
+{"source":"Reel to Reel","target":"Multiple Performers","value":"46"},
+
+{"source":"Audio Cassettes","target":"Single Performer","value":"227"},
+{"source":"Audio Cassettes","target":"Multiple Performers","value":"495"},
+    
+{"source":"Haste to the Wedding","target":"Reel to Reel", "value":"3"},
+{"source":"Haste to the Wedding","target":"78-rpm Disc", "value":"3"},
+{"source":"Devil's Dream","target":"78-rpm Disc", "value":"6"},
+    
+    
+{"source":"Dear Irish Boy","target":"Wax Cylinder", "value":"1"},
+{"source":"Dear Irish Boy","target":"Audio Cassettes", "value":"3"},
+    
+{"source":"The Blackbird","target":"Wax Cylinder", "value":"2"},
+{"source":"The Blackbird","target":"Reel to Reel", "value":"2"},
+{"source":"The Blackbird","target":"Audio Cassettes", "value":"1"},
+    
+{"source":"The Mountain Road","target":"Audio Cassettes", "value":"4"}
+    
+] ,
+"nodes": [
+    
+
+
+{"name":"Haste to the Wedding"},
+{"name":"Devil's Dream"},
+{"name":"Dear Irish Boy"},
+{"name":"The Blackbird"}, 
+{"name":"The Mountain Road"},
+    
+{"name":"Single Performer"},
+{"name":"Multiple Performers"},
+    
+{"name":"Wax Cylinder"},
+{"name":"78-rpm Disc"},
+{"name":"Audio Cassettes"},
+{"name":"Reel to Reel"}
+
+] }
