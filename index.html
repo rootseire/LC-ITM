@@ -129,7 +129,7 @@ d3.json("sankey14march.json", function(error, graph) {
       .attr("transform", null)
       .text(function(d) { return d.name; })
     .filter(function(d) { return d.x < width / 2; })
-      .attr("x", 6 + sankey.nodeWidth() - 45)
+      .attr("x", 6 + sankey.nodeWidth())
       .attr("text-anchor", "start");
  
 // the function for moving the nodes
