@@ -2,8 +2,7 @@
 "links": [
     
 {"source":"Philadelphia Céilí Group","target":"Audio Cassettes","value":"1"},
-{"source":"Philadelphia Céilí Group","target":"Reel to Reel","value":"40"},
-    
+{"source":"Philadelphia Céilí Group","target":"Reel to Reel","value":"40"}, 
 {"source":"Montana Folklife Survey","target":"Reel to Reel","value":"7"}, 
 {"source":"Ed McDermott Collection","target":"Reel to Reel","value":"2"},
 {"source":"Kirkhuff and Vesey","target":"Reel to Reel","value":"9"},
@@ -15,9 +14,7 @@
 {"source":"Alan Lomax & Helen Hartness Flanders","target":"78-rpm Disc","value":"10"},
 {"source":"Helen Creighton","target":"78-rpm Disc","value":"23"}, 
     
-{"source":"Robert F. Draves and Helene Stratman-Thomas","target":"78-rpm Disc","value":"3"}, 
-    
-    
+{"source":"Robert F Draves and Helene Stratman Thomas","target":"78-rpm Disc","value":"3"},   
     
 {"source":"Reels","target":"Philadelphia Céilí Group","value":"269"},    
 {"source":"Jigs","target":"Philadelphia Céilí Group","value":"123"},    
@@ -125,16 +122,10 @@
 {"source":"1960s - 1980s","target":"Audio Cassette Player","value":"41"},
 {"source":"1930s - 1940s","target":"Catalog Cards","value":"42"},
 {"source":"1930s - 1940s","target":"On Demand Listening","value":"42"},
-
-    
 {"source":"1960s - 1980s","target":"LOC Website","value":"19"},
 {"source":"1930s - 1940s","target":"LOC Website","value":"10"},
-    
 {"source":"1930s - 1940s","target":"On External Website","value":"4"},
-
-{"source":"1900s","target":"On External Website","value":"32"},
-    
-    
+{"source":"1900s","target":"On External Website","value":"32"},  
 {"source":"1930s - 1940s","target":"Finding Aid Online","value":"2"},
 {"source":"1960s - 1980s","target":"Reel to Reel Player","value":"2"}
     
@@ -157,8 +148,7 @@
 {"name":"1900s"},
 {"name":"1930s - 1940s"},
 {"name":"1960s - 1980s"},
-
-    
+ 
     
 {"name":"Reels"},
 {"name":"Jigs"},
@@ -181,17 +171,6 @@
 {"name":"Quadrilles"},
 {"name":"Schottisches"},
 {"name":"Stories"},
-    
-
-    
-    
-
-    
-    
-    
-    
-    
-    
 {"name":"Philadelphia Céilí Group"},
 {"name":"Helen Creighton"},
 {"name":"Montana Folklife Survey"},
@@ -201,7 +180,7 @@
 {"name":"Sidney Robertson Cowell"},
 {"name":"Alan Lomax & Helen Hartness Flanders"},
 {"name":"Alan Jabbour Duplication Project"},
-    
+{"name":"Robert F Draves and Helene Stratman Thomas"},
 
     
 {"name":"Wax Cylinder"},
