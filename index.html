@@ -115,7 +115,7 @@ p[data-v-ad5fa5ec] {
 <script>
   
 var units = "Recordings";
- 
+var heightAdd = 30;
 var margin = {top: 10, right: 10, bottom: 10, left: 10},
     width = 1000 - margin.left - margin.right,
     height = 600 - margin.top - margin.bottom;
@@ -180,7 +180,10 @@ d3.json("sankey14march.json", function(error, graph) {
     .enter().append("g")
       .attr("class", "node")
       .attr("transform", function(d) { 
-		  return "translate(" + d.x + "," + d.y + ")"; })
+	  return "translate(" + d.x + "," + d.y + ")"; })
+  
+ 
+  
     .call(d3.behavior.drag()
       .origin(function(d) { return d; })
       .on("dragstart", function() { 
@@ -189,6 +192,7 @@ d3.json("sankey14march.json", function(error, graph) {
  
 // add the rectangles for the nodes
   node.append("rect")
+    
       .attr("height", function(d) { return d.dy; })
       .attr("width", sankey.nodeWidth())
       .style("fill", function(d) {
@@ -213,26 +217,34 @@ d3.json("sankey14march.json", function(error, graph) {
       .attr("transform", null)
       .text(function(d) { return d.name; })
     .filter(function(d) { return d.x < width / 2; })
-      //.attr("x", 6 + sankey.nodeWidth())
+      .attr("x", 6 + sankey.nodeWidth())
       .attr("x", function(d){
       if (d.name == 'Jigs' || d.name == 'Reels' || d.name == 'Songs'|| d.name == 'Dances' || d.name == 'Gavottes'|| d.name == 'Varsouviana' || d.name == 'Waltzes' || d.name == 'Barndances' || d.name == 'Quadrilles' || d.name == 'Slip Jigs' || d.name == 'Stories'|| d.name == 'Hornpipes' || d.name == 'Slow Airs'|| d.name == 'Marches' || d.name == 'Slides'|| d.name == 'Schottisches' || d.name == 'Air'|| d.name == 'Polkas' || d.name == 'Set Dances'|| d.name == 'Flings') {
     //.attr("x", 6 + sankey.nodeWidth())
       return -40 + sankey.nodeWidth();
-           }else if(d.name == 'CD Disc' || d.name == 'On External Website' || d.name == 'Catalog Cards'|| d.name == 'On Demand Listening'|| d.name == 'Finding Aid Online'|| d.name == 'LOC Website'|| d.name == 'Audio Cassette Player'|| d.name == 'Reel to Reel Player'){
-          
-      return 40 + sankey.nodeWidth();
-  }else{
+           }
+      
+      if(d.name == 'CD Disc' || d.name == 'On External Website' || d.name == 'Catalog Cards'|| d.name == 'On Demand Listening'|| d.name == 'Finding Aid Online'|| d.name == 'LOC Website'|| d.name == 'Audio Cassette Player'|| d.name == 'Reel to Reel Player'){
+        return -40 + sankey.nodeWidth();
+  }
+      
+     else{
       return 6 + sankey.nodeWidth();
-  }})
+  }
+  })
     .attr("text-anchor", function(d) {
+      if(d.name == 'CD Disc' || d.name == 'On External Website' || d.name == 'Catalog Cards' || d.name == 'On Demand Listening' || d.name == 'Finding Aid Online'|| d.name == 'LOC Website'|| d.name == 'Audio Cassette Player'|| d.name == 'Reel to Reel Player'){
+      return "start";
+    }
       if (d.name == 'Jigs' || d.name == 'Reels' || d.name == 'Songs'|| d.name == 'Dances' || d.name == 'Gavottes'|| d.name == 'Varsouviana' || d.name == 'Waltzes' || d.name == 'Barndances' || d.name == 'Quadrilles' || d.name == 'Slip Jigs' || d.name == 'Stories'|| d.name == 'Hornpipes' || d.name == 'Slow Airs'|| d.name == 'Marches' || d.name == 'Slides'|| d.name == 'Schottisches' || d.name == 'Air'|| d.name == 'Polkas' || d.name == 'Set Dances'|| d.name == 'Flings') {
         return "end";//on condition match
-      }else if(d.name == 'CD Disc' || d.name == 'On External Website' || d.name == 'Catalog Cards'|| d.name == 'On Demand Listening'|| d.name == 'Finding Aid Online'|| d.name == 'LOC Website'|| d.name == 'Audio Cassette Player'|| d.name == 'Reel to Reel Player'){
-          
+      }
+      if(d.name == 'Wax Cylinder' || d.name == 'Reel to Reel' || d.name == '78-rpm Disc'){
+       return "middle";
+		   }
+    else{
       return "start";
-  }else{
-       return "start";
-		   }})
+  }})
     
         
 
