@@ -189,8 +189,13 @@ d3.json("sankey14march.json", function(error, graph) {
   node.append("rect")
       .attr("height", function(d) { return d.dy; })
       .attr("width", sankey.nodeWidth())
-      .style("fill", function(d) { 
-		  return d.color = color(d.name.replace(/ .*/, "")); })
+      .style("fill", function(d) {
+      if (d.name == 'Philadelphia Céilí Group') {
+        return "red";//on condition match
+      }else{
+      
+		  return d.color = color(d.name.replace(/ .*/, "")); }})
+    
       .style("stroke", function(d) { 
 		  return d3.rgb(d.color).darker(2); })
     .append("title")
@@ -207,7 +212,24 @@ d3.json("sankey14march.json", function(error, graph) {
       .text(function(d) { return d.name; })
     .filter(function(d) { return d.x < width / 2; })
       .attr("x", 6 + sankey.nodeWidth())
-      .attr("text-anchor", "start");
+      .attr("x", function(d){
+      if (d.name == 'Jigs' || d.name == 'Reels' || d.name == 'Songs'|| d.name == 'Dances' || d.name == 'Gavottes'|| d.name == 'Varsouviana' || d.name == 'Waltzes' || d.name == 'Barndances' || d.name == 'Quadrilles' || d.name == 'Slip Jigs' || d.name == 'Stories'|| d.name == 'Hornpipes' || d.name == 'Slow Airs'|| d.name == 'Marches' || d.name == 'Slides'|| d.name == 'Schottisches' || d.name == 'Air'|| d.name == 'Polkas' || d.name == 'Set Dances'|| d.name == 'Flings') {
+    //.attr("x", 6 + sankey.nodeWidth())
+      return -46 + sankey.nodeWidth();
+           }else{
+      return 6 + sankey.nodeWidth();
+  }})
+    .attr("text-anchor", function(d) {
+      if (d.name == 'Jigs' || d.name == 'Reels' || d.name == 'Songs'|| d.name == 'Dances' || d.name == 'Gavottes'|| d.name == 'Varsouviana' || d.name == 'Waltzes' || d.name == 'Barndances' || d.name == 'Quadrilles' || d.name == 'Slip Jigs' || d.name == 'Stories'|| d.name == 'Hornpipes' || d.name == 'Slow Airs'|| d.name == 'Marches' || d.name == 'Slides'|| d.name == 'Schottisches' || d.name == 'Air'|| d.name == 'Polkas' || d.name == 'Set Dances'|| d.name == 'Flings') {
+        return "end";//on condition match
+      }else{
+       return "start";
+		   }})
+    
+        
+
+    
+      //.attr("text-anchor", "start");
  
 // the function for moving the nodes
   function dragmove(d) {
