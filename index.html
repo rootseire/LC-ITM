@@ -166,6 +166,7 @@ d3.json("sankey14march.json", function(error, graph) {
       .attr("d", path)
       .style("stroke-width", function(d) { return Math.max(1, d.dy); })
       .sort(function(a, b) { return b.dy - a.dy; });
+      
  
 // add the link titles
   link.append("title")
@@ -179,10 +180,7 @@ d3.json("sankey14march.json", function(error, graph) {
     .enter().append("g")
       .attr("class", "node")
       .attr("transform", function(d) { 
-          if (d.name == 'Hornpipes') {
-        return "translate(" + d.x + "," + 24 + ")";//on condition match
-      }else{
-		  return "translate(" + d.x + "," + d.y + ")"; }})
+		  return "translate(" + d.x + "," + d.y + ")"; })
     .call(d3.behavior.drag()
       .origin(function(d) { return d; })
       .on("dragstart", function() { 
