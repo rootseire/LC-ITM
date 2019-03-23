@@ -181,7 +181,9 @@ d3.json("sankey14march.json", function(error, graph) {
       .attr("class", "node")
       .attr("transform", function(d) { 
 	  return "translate(" + d.x + "," + d.y + ")"; })
-  
+   .call(function () {
+      manualLayout();
+    })
  
   
     .call(d3.behavior.drag()
@@ -264,8 +266,30 @@ d3.json("sankey14march.json", function(error, graph) {
     sankey.relayout();
     link.attr("d", path);
   }
-});
+
  
+    
+    
+    function manualLayout() {
+    //http://stackoverflow.com/questions/10337640/how-to-access-the-dom-element-that-correlates-to-a-d3-svg-object
+    //displacements in order of foo nodes (foo[0][j])
+    var displacements = [0,40,80,120,160,200,240,280];
+    var foo = d3.selectAll("g.node");
+    for (j=0; j < displacements.length; j++) {
+      pickNode = foo[0][j]; //equals "this" in d3.behavior.drag()...on("dragstart")
+      d = graph.nodes[j];
+      d3.select(pickNode).attr("transform", 
+            "translate(" + (
+                   d.x = d.x
+          ) + "," + (
+                   d.y = displacements[j] //Math.max(0, Math.min(height - d.dy, d3.event.y))
+            ) + ")");
+   
+    }
+    sankey.relayout();
+    link.attr("d", path);
+  }
+    });
 </script>
 
 </body>
