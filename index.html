@@ -92,8 +92,10 @@ p[data-v-ad5fa5ec] {
         
     }
     svg{overflow:visible;
+          width:991px!important;
     background-image: url('https://raw.githubusercontent.com/rootseire/LC-ITM/master/BG.png');
     background-position-x: -152px;
+      
     }
 </style>
 <body>
@@ -182,8 +184,12 @@ d3.json("sankey14march.json", function(error, graph) {
       .data(graph.nodes)
     .enter().append("g")
       .attr("class", "node")
-      .attr("transform", function(d) { 
-	  return "translate(" + d.x + "," + d.y + ")"; })
+  .attr("transform", function(d){
+      if (d.name == 'Jigs' || d.name == 'Reels' || d.name == 'Songs'|| d.name == 'Dances' || d.name == 'Gavottes'|| d.name == 'Varsouviana' || d.name == 'Waltzes' || d.name == 'Barndances' || d.name == 'Quadrilles' || d.name == 'Slip Jigs' || d.name == 'Stories'|| d.name == 'Hornpipes' || d.name == 'Slow Airs'|| d.name == 'Marches' || d.name == 'Slides'|| d.name == 'Schottisches' || d.name == 'Air'|| d.name == 'Polkas' || d.name == 'Set Dances'|| d.name == 'Flings') {
+    //.attr("x", 6 + sankey.nodeWidth())
+    return "translate(" + -9 + "," + d.y + ")"; }else{
+        
+	  return "translate(" + d.x + "," + d.y + ")"; }})
    .call(function () {
       manualLayout();
     })
