@@ -1,9 +1,10 @@
 {
 "links": [
     
+ 
+{"source":"Montana Folklife Survey","target":"Reel to Reel","value":"7"},
 {"source":"Philadelphia Céilí Group","target":"Audio Cassettes","value":"1"},
-{"source":"Philadelphia Céilí Group","target":"Reel to Reel","value":"40"}, 
-{"source":"Montana Folklife Survey","target":"Reel to Reel","value":"7"}, 
+{"source":"Philadelphia Céilí Group","target":"Reel to Reel","value":"40"},
 {"source":"Ed McDermott Collection","target":"Reel to Reel","value":"2"},
 {"source":"Kirkhuff and Vesey","target":"Reel to Reel","value":"9"},
 {"source":"Alan Jabbour Duplication Project","target":"Reel to Reel","value":"1"},
@@ -19,8 +20,9 @@
 {"source":"Flings","target":"Robert F Draves and Helene Stratman Thomas","value":"2"},    
 {"source":"Reels","target":"Robert F Draves and Helene Stratman Thomas","value":"2"},    
 {"source":"Hornpipes","target":"Robert F Draves and Helene Stratman Thomas","value":"1"},    
-{"source":"Reels","target":"Philadelphia Céilí Group","value":"269"},    
-{"source":"Jigs","target":"Philadelphia Céilí Group","value":"123"},    
+   
+{"source":"Jigs","target":"Philadelphia Céilí Group","value":"123"},
+{"source":"Reels","target":"Philadelphia Céilí Group","value":"269"}, 
 {"source":"Hornpipes","target":"Philadelphia Céilí Group","value":"8"},    
 {"source":"Slip Jigs","target":"Philadelphia Céilí Group","value":"10"},    
 {"source":"Songs","target":"Philadelphia Céilí Group","value":"100"},    
@@ -114,81 +116,80 @@
     
     
     
-{"source":"Wax Cylinder","target":"1900s","value":"32"},
-{"source":"Audio Cassettes","target":"1960s - 1980s","value":"1"},
-{"source":"78-rpm Disc","target":"1930s - 1940s","value":"42"},
-{"source":"Reel to Reel","target":"1960s - 1980s","value":"59"},
- 
-   
+{"source":"Wax Cylinder","target":"On External Website","value":"32"},
+{"source":"Wax Cylinder","target":"CD Disc","value":"32"},
+
+{"source":"78-rpm Disc","target":"Catalog Cards","value":"42"},
+{"source":"78-rpm Disc","target":"On Demand Listening","value":"42"},
+{"source":"78-rpm Disc","target":"LOC Website","value":"19"},
+{"source":"78-rpm Disc","target":"LOC Website","value":"10"},
+{"source":"78-rpm Disc","target":"On External Website","value":"4"},
+{"source":"78-rpm Disc","target":"Finding Aid Online","value":"2"}, 
     
-{"source":"1900s","target":"CD Disc","value":"32"},
-{"source":"1960s - 1980s","target":"Audio Cassette Player","value":"41"},
-{"source":"1930s - 1940s","target":"Catalog Cards","value":"42"},
-{"source":"1930s - 1940s","target":"On Demand Listening","value":"42"},
-{"source":"1960s - 1980s","target":"LOC Website","value":"19"},
-{"source":"1930s - 1940s","target":"LOC Website","value":"10"},
-{"source":"1930s - 1940s","target":"On External Website","value":"4"},
-{"source":"1900s","target":"On External Website","value":"32"},  
-{"source":"1930s - 1940s","target":"Finding Aid Online","value":"2"},
-{"source":"1960s - 1980s","target":"Reel to Reel Player","value":"2"}
+
+{"source":"Reel to Reel","target":"Audio Cassette Player","value":"41"},
+{"source":"Reel to Reel","target":"Reel to Reel Player","value":"2"}
     
 
 
 ] ,
 "nodes": [  
    
-           
-{"name":"Catalog Cards"},
-{"name":"Audio Cassette Player"},
-{"name":"Finding Aid Online"},
-{"name":"Reel to Reel Player"},
-{"name":"LOC Website"},
-{"name":"On External Website"},
+         
+
 {"name":"CD Disc"},
+{"name":"On External Website"},
+{"name":"Catalog Cards"},    
 {"name":"On Demand Listening"},
+{"name":"Finding Aid Online"},
+{"name":"LOC Website"},
+{"name":"Audio Cassette Player"},
+{"name":"Reel to Reel Player"},
+
+
+
     
-    
-{"name":"1900s"},
-{"name":"1930s - 1940s"},
-{"name":"1960s - 1980s"},
  
-    
-{"name":"Reels"},
-{"name":"Jigs"},
-{"name":"Slip Jigs"},
-{"name":"Songs"},
-{"name":"Waltzes"},
-{"name":"Barndances"},
-{"name":"Dances"},
-{"name":"Set Dances"},
+{"name":"Hornpipes"},    
 {"name":"Marches"},
+{"name":"Slip Jigs"},
+{"name":"Set Dances"},
 {"name":"Slow Airs"},
 {"name":"Air"},
+{"name":"Flings"},    
+{"name":"Polkas"},    
+{"name":"Stories"},
+{"name":"Schottisches"},
+{"name":"Quadrilles"}, 
+{"name":"Songs"},
+{"name":"Barndances"},
+{"name":"Waltzes"},
+{"name":"Slides"},        
+{"name":"Reels"},
+{"name":"Jigs"},
+{"name":"Dances"},
 {"name":"Gavottes"},
 {"name":"Varsouviana"},
-{"name":"Polkas"},
-{"name":"Slides"},
-{"name":"Flings"},
-    
-{"name":"Hornpipes"},
-{"name":"Quadrilles"},
-{"name":"Schottisches"},
-{"name":"Stories"},
-{"name":"Philadelphia Céilí Group"},
-{"name":"Helen Creighton"},
-{"name":"Montana Folklife Survey"},
+
+
 {"name":"O'Neill Wax Cylinder Collection"},
-{"name":"Ed McDermott Collection"},
-{"name":"Kirkhuff and Vesey"},
-{"name":"Sidney Robertson Cowell"},
-{"name":"Alan Lomax & Helen Hartness Flanders"},
-{"name":"Alan Jabbour Duplication Project"},
 {"name":"Robert F Draves and Helene Stratman Thomas"},
+{"name":"Sidney Robertson Cowell"},
+{"name":"Alan Lomax & Helen Hartness Flanders"},    
+{"name":"Helen Creighton"},
+{"name":"Alan Jabbour Duplication Project"},
+{"name":"Kirkhuff and Vesey"},
+{"name":"Ed McDermott Collection"},    
+{"name":"Montana Folklife Survey"},
+{"name":"Philadelphia Céilí Group"},
+
+
+
 
     
 {"name":"Wax Cylinder"},
 {"name":"78-rpm Disc"},
-{"name":"Audio Cassettes"},
-{"name":"Reel to Reel"}
+{"name":"Reel to Reel"},
+{"name":"Audio Cassettes"}
 
 ] }
