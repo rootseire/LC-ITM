@@ -213,12 +213,15 @@ d3.json("sankey14march.json", function(error, graph) {
       .attr("transform", null)
       .text(function(d) { return d.name; })
     .filter(function(d) { return d.x < width / 2; })
-      .attr("x", 6 + sankey.nodeWidth())
+      //.attr("x", 6 + sankey.nodeWidth())
       .attr("x", function(d){
       if (d.name == 'Jigs' || d.name == 'Reels' || d.name == 'Songs'|| d.name == 'Dances' || d.name == 'Gavottes'|| d.name == 'Varsouviana' || d.name == 'Waltzes' || d.name == 'Barndances' || d.name == 'Quadrilles' || d.name == 'Slip Jigs' || d.name == 'Stories'|| d.name == 'Hornpipes' || d.name == 'Slow Airs'|| d.name == 'Marches' || d.name == 'Slides'|| d.name == 'Schottisches' || d.name == 'Air'|| d.name == 'Polkas' || d.name == 'Set Dances'|| d.name == 'Flings') {
     //.attr("x", 6 + sankey.nodeWidth())
       return -40 + sankey.nodeWidth();
-           }else{
+           }else if(d.name == 'CD Disc' || d.name == 'On External Website' || d.name == 'Catalog Cards'|| d.name == 'On Demand Listening'|| d.name == 'Finding Aid Online'|| d.name == 'LOC Website'|| d.name == 'Audio Cassette Player'|| d.name == 'Reel to Reel Player'){
+          
+      return 40 + sankey.nodeWidth();
+  }else{
       return 6 + sankey.nodeWidth();
   }})
     .attr("text-anchor", function(d) {
@@ -226,7 +229,7 @@ d3.json("sankey14march.json", function(error, graph) {
         return "end";//on condition match
       }else if(d.name == 'CD Disc' || d.name == 'On External Website' || d.name == 'Catalog Cards'|| d.name == 'On Demand Listening'|| d.name == 'Finding Aid Online'|| d.name == 'LOC Website'|| d.name == 'Audio Cassette Player'|| d.name == 'Reel to Reel Player'){
           
-      return "end";
+      return "start";
   }else{
        return "start";
 		   }})
