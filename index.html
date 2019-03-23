@@ -179,7 +179,10 @@ d3.json("sankey14march.json", function(error, graph) {
     .enter().append("g")
       .attr("class", "node")
       .attr("transform", function(d) { 
-		  return "translate(" + d.x + "," + d.y + ")"; })
+          if (d.name == 'Hornpipes') {
+        return "translate(" + d.x + "," + 24 + ")";//on condition match
+      }else{
+		  return "translate(" + d.x + "," + d.y + ")"; }})
     .call(d3.behavior.drag()
       .origin(function(d) { return d; })
       .on("dragstart", function() { 
@@ -205,10 +208,10 @@ d3.json("sankey14march.json", function(error, graph) {
  
 // add in the title for the nodes
   node.append("text")
-      .attr("x", -6)
+      //.attr("x", -6)
       .attr("y", function(d) { return d.dy / 2; })
       .attr("dy", ".35em")
-      .attr("text-anchor", "end")
+      //.attr("text-anchor", "end")
       .attr("transform", null)
       .text(function(d) { return d.name; })
     .filter(function(d) { return d.x < width / 2; })
@@ -216,9 +219,9 @@ d3.json("sankey14march.json", function(error, graph) {
       .attr("x", function(d){
       if (d.name == 'Jigs' || d.name == 'Reels' || d.name == 'Songs'|| d.name == 'Dances' || d.name == 'Gavottes'|| d.name == 'Varsouviana' || d.name == 'Waltzes' || d.name == 'Barndances' || d.name == 'Quadrilles' || d.name == 'Slip Jigs' || d.name == 'Stories'|| d.name == 'Hornpipes' || d.name == 'Slow Airs'|| d.name == 'Marches' || d.name == 'Slides'|| d.name == 'Schottisches' || d.name == 'Air'|| d.name == 'Polkas' || d.name == 'Set Dances'|| d.name == 'Flings') {
     //.attr("x", 6 + sankey.nodeWidth())
-      return -46 + sankey.nodeWidth();
+      return -40 + sankey.nodeWidth();
            }else if(d.name == '1900s' || d.name == '1960s - 1980s' || d.name == '1930s - 1940s'){
-               return sankey.nodeWidth();
+               return 46 + sankey.nodeWidth();
            }else{
       return 6 + sankey.nodeWidth();
   }})
