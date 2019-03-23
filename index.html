@@ -217,13 +217,15 @@ d3.json("sankey14march.json", function(error, graph) {
       if (d.name == 'Jigs' || d.name == 'Reels' || d.name == 'Songs'|| d.name == 'Dances' || d.name == 'Gavottes'|| d.name == 'Varsouviana' || d.name == 'Waltzes' || d.name == 'Barndances' || d.name == 'Quadrilles' || d.name == 'Slip Jigs' || d.name == 'Stories'|| d.name == 'Hornpipes' || d.name == 'Slow Airs'|| d.name == 'Marches' || d.name == 'Slides'|| d.name == 'Schottisches' || d.name == 'Air'|| d.name == 'Polkas' || d.name == 'Set Dances'|| d.name == 'Flings') {
     //.attr("x", 6 + sankey.nodeWidth())
       return -46 + sankey.nodeWidth();
+           }else if(d.name == '1900s' || d.name == '1960s - 1980s' || d.name == '1930s - 1940s'){
+               return sankey.nodeWidth();
            }else{
       return 6 + sankey.nodeWidth();
   }})
     .attr("text-anchor", function(d) {
       if (d.name == 'Jigs' || d.name == 'Reels' || d.name == 'Songs'|| d.name == 'Dances' || d.name == 'Gavottes'|| d.name == 'Varsouviana' || d.name == 'Waltzes' || d.name == 'Barndances' || d.name == 'Quadrilles' || d.name == 'Slip Jigs' || d.name == 'Stories'|| d.name == 'Hornpipes' || d.name == 'Slow Airs'|| d.name == 'Marches' || d.name == 'Slides'|| d.name == 'Schottisches' || d.name == 'Air'|| d.name == 'Polkas' || d.name == 'Set Dances'|| d.name == 'Flings') {
         return "end";//on condition match
-      }if(d.name == '1900s' || d.name == '1960s - 1980s' || d.name == '1930s - 1940s'){
+      }else if(d.name == '1900s' || d.name == '1960s - 1980s' || d.name == '1930s - 1940s'){
           
       return "middle";
   }else{
