@@ -7,19 +7,19 @@
 {"source":"Philadelphia Céilí Group","target":"Reel to Reel","value":"40"},
 {"source":"Ed McDermott Collection","target":"Reel to Reel","value":"2"},
 {"source":"Kirkhuff and Vesey","target":"Reel to Reel","value":"9"},
-{"source":"Alan Jabbour Duplication Project","target":"Reel to Reel","value":"1"},
+{"source":"Alan Jabbour ","target":"Reel to Reel","value":"1"},
     
-{"source":"O'Neill Wax Cylinder Collection","target":"Wax Cylinder","value":"32"},   
+{"source":"O'Neill Wax Cylinders","target":"Wax Cylinder","value":"32"},   
     
 {"source":"Sidney Robertson Cowell","target":"78-rpm Disc","value":"9"},    
-{"source":"Alan Lomax & Helen Hartness Flanders","target":"78-rpm Disc","value":"10"},
+{"source":"Lomax & Flanders","target":"78-rpm Disc","value":"10"},
 {"source":"Helen Creighton","target":"78-rpm Disc","value":"23"}, 
     
-{"source":"Robert F Draves and Helene Stratman Thomas","target":"78-rpm Disc","value":"3"},   
+{"source":"Draves & Stratman Thomas","target":"78-rpm Disc","value":"3"},   
     
-{"source":"Flings","target":"Robert F Draves and Helene Stratman Thomas","value":"2"},    
-{"source":"Reels","target":"Robert F Draves and Helene Stratman Thomas","value":"2"},    
-{"source":"Hornpipes","target":"Robert F Draves and Helene Stratman Thomas","value":"1"},    
+{"source":"Flings","target":"Draves & Stratman Thomas","value":"2"},    
+{"source":"Reels","target":"Draves & Stratman Thomas","value":"2"},    
+{"source":"Hornpipes","target":"Draves & Stratman Thomas","value":"1"},    
    
 {"source":"Jigs","target":"Philadelphia Céilí Group","value":"123"},
 {"source":"Reels","target":"Philadelphia Céilí Group","value":"269"}, 
@@ -47,13 +47,13 @@
     
     
     
-{"source":"Slow Airs","target":"O'Neill Wax Cylinder Collection","value":"7"},    
-{"source":"Hornpipes","target":"O'Neill Wax Cylinder Collection","value":"3"},    
-{"source":"Jigs","target":"O'Neill Wax Cylinder Collection","value":"7"},    
-{"source":"Marches","target":"O'Neill Wax Cylinder Collection","value":"2"},    
-{"source":"Reels","target":"O'Neill Wax Cylinder Collection","value":"12"},    
-{"source":"Set Dances","target":"O'Neill Wax Cylinder Collection","value":"2"},    
-{"source":"Slip Jigs","target":"O'Neill Wax Cylinder Collection","value":"1"},
+{"source":"Slow Airs","target":"O'Neill Wax Cylinders","value":"7"},    
+{"source":"Hornpipes","target":"O'Neill Wax Cylinders","value":"3"},    
+{"source":"Jigs","target":"O'Neill Wax Cylinders","value":"7"},    
+{"source":"Marches","target":"O'Neill Wax Cylinders","value":"2"},    
+{"source":"Reels","target":"O'Neill Wax Cylinders","value":"12"},    
+{"source":"Set Dances","target":"O'Neill Wax Cylinders","value":"2"},    
+{"source":"Slip Jigs","target":"O'Neill Wax Cylinders","value":"1"},
     
 {"source":"Waltzes","target":"Montana Folklife Survey","value":"17"},    
 {"source":"Slip Jigs","target":"Montana Folklife Survey","value":"4"},    
@@ -99,18 +99,18 @@
 {"source":"Songs","target":"Sidney Robertson Cowell","value":"1"},
     
     
-{"source":"Songs","target":"Alan Lomax & Helen Hartness Flanders","value":"5"},
-{"source":"Reels","target":"Alan Lomax & Helen Hartness Flanders","value":"6"},
-{"source":"Marches","target":"Alan Lomax & Helen Hartness Flanders","value":"2"},
-{"source":"Jigs","target":"Alan Lomax & Helen Hartness Flanders","value":"3"},
-{"source":"Hornpipes","target":"Alan Lomax & Helen Hartness Flanders","value":"1"},
-{"source":"Flings","target":"Alan Lomax & Helen Hartness Flanders","value":"3"},
+{"source":"Songs","target":"Lomax & Flanders","value":"5"},
+{"source":"Reels","target":"Lomax & Flanders","value":"6"},
+{"source":"Marches","target":"Lomax & Flanders","value":"2"},
+{"source":"Jigs","target":"Lomax & Flanders","value":"3"},
+{"source":"Hornpipes","target":"Lomax & Flanders","value":"1"},
+{"source":"Flings","target":"Lomax & Flanders","value":"3"},
     
     
-{"source":"Reels","target":"Alan Jabbour Duplication Project","value":"4"},
-{"source":"Jigs","target":"Alan Jabbour Duplication Project","value":"3"},
-{"source":"Hornpipes","target":"Alan Jabbour Duplication Project","value":"3"},
-{"source":"Marches","target":"Alan Jabbour Duplication Project","value":"2"},
+{"source":"Reels","target":"Alan Jabbour ","value":"4"},
+{"source":"Jigs","target":"Alan Jabbour ","value":"3"},
+{"source":"Hornpipes","target":"Alan Jabbour ","value":"3"},
+{"source":"Marches","target":"Alan Jabbour ","value":"2"},
     
 
     
@@ -172,12 +172,12 @@
 {"name":"Varsouviana"},
 
 
-{"name":"O'Neill Wax Cylinder Collection"},
-{"name":"Robert F Draves and Helene Stratman Thomas"},
+{"name":"O'Neill Wax Cylinders"},
+{"name":"Draves & Stratman Thomas"},
 {"name":"Sidney Robertson Cowell"},
-{"name":"Alan Lomax & Helen Hartness Flanders"},    
+{"name":"Lomax & Flanders"},    
 {"name":"Helen Creighton"},
-{"name":"Alan Jabbour Duplication Project"},
+{"name":"Alan Jabbour "},
 {"name":"Kirkhuff and Vesey"},
 {"name":"Ed McDermott Collection"},    
 {"name":"Montana Folklife Survey"},
