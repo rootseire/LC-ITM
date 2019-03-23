@@ -276,7 +276,7 @@ d3.json("sankey14march.json", function(error, graph) {
     function manualLayout() {
     //http://stackoverflow.com/questions/10337640/how-to-access-the-dom-element-that-correlates-to-a-d3-svg-object
     //displacements in order of foo nodes (foo[0][j])
-    var displacements = [0,40,80,120,160,200,240,280];
+    var displacements = [0,40,80,120,160,200,240,260];
     var foo = d3.selectAll("g.node");
     for (j=0; j < displacements.length; j++) {
       pickNode = foo[0][j]; //equals "this" in d3.behavior.drag()...on("dragstart")
