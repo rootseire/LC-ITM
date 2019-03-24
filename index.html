@@ -220,9 +220,6 @@ d3.json("sankey14march.json", function(error, graph) {
       .attr("height", function(d) { return d.dy; })
       .attr("width", sankey.nodeWidth())
       .style("fill", function(d) {
-      if (d.name == 'Philadelphia Céilí Group') {
-        return "red";//on condition match
-      }else{
       
 		  return d.color = color(d.name.replace(/ .*/, "")); }})
     
